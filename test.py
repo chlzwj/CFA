@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
 
 import torch
 import torch.nn.functional as F
@@ -17,7 +17,7 @@ import cv2
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
-parser.add_argument('--pth_path', type=str, default='./checkpoint/CFANet.pth')
+parser.add_argument('--pth_path', type=str, default='./Snapshot/CFANet/Cod_best.pth')
 
 for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
     
